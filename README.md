@@ -1,2 +1,2 @@
 # Codewars
-Some learning files by solving katas in codewars
+Some learning files from codewars
