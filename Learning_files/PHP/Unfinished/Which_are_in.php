@@ -21,10 +21,18 @@ function inArray($array1, $array2)
 $a2 = ["lively", "alive", "harp", "sharp", "armstrong"];
 $a1 = ["arp", "live", "strong"];
 
-foreach (inArray($a1, $a2) as $i)
+$start = microtime(true);
+
+$output = inArray($a1, $a2);
+
+$end = microtime(true);
+
+foreach ($output as $i)
 {
     echo $i;
     echo "\n";
 }
+
+printf("%f\n", $end - $start);
 
 ?>
